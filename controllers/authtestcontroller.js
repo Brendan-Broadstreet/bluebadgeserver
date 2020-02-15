@@ -54,8 +54,8 @@ router.get('/:id', function (req, res) {
         }
         );
     });
-//[/delete]/[number]
-//localhost:3500/authtest/delete/11
+
+    
 router.delete("/delete/:id", function (req, res) {
     var data  = req.params.id;
     var userid = req.user.id;
@@ -73,8 +73,7 @@ router.delete("/delete/:id", function (req, res) {
     )
 });
 
-//updating records for the individual
-//localhost:3500:/api/update/authtest/update/10
+
 router.put("/update/:id", function (req, res) {
     var data = req.params.id;
     var authtestdata = req.body.authtestdata.item;
