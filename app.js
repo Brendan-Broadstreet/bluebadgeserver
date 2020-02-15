@@ -24,6 +24,6 @@ app.use("/user/list", lists);
 
 app.use('/authtest', authTest);
 
-app.listen(3500, function(){
-    console.log('App is listening on 3500');
+app.listen(process.env.PORT, function(){
+    console.log(`App is listening on ${process.env.PORT}`);
 })
